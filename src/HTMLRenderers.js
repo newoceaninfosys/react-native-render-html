@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, View, WebView, Dimensions } from 'react-native';
-import WebViewAutoHeight from 'react-native-webview-autoheight';
+import WebViewAutoHeight from '@nois/react-native-webview-autoheight';
 import { _constructStyles, _getElementClassStyles } from './HTMLStyles';
 import HTMLImage from './HTMLImage';
 
