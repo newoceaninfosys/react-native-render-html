@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, View, WebView, Dimensions } from 'react-native';
+import WebViewAutoHeight from 'react-native-webview-autoheight';
 import { _constructStyles, _getElementClassStyles } from './HTMLStyles';
 import HTMLImage from './HTMLImage';
 
@@ -140,7 +141,7 @@ export function iframe (htmlAttribs, children, convertedCSSStyles, passProps) {
     });
 
     return (
-        <WebView key={passProps.key} source={{ uri: htmlAttribs.src }} style={style} />
+        <WebViewAutoHeight key={passProps.key} source={{ html: htmlAttribs.srcdoc }} style={style} />
     );
 }
 
