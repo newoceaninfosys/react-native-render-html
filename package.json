@@ -1,6 +1,6 @@
 {
   "name": "@nois/react-native-render-html",
-  "version": "3.11.2",
+  "version": "3.12.0",
   "author": "Archriss",
   "license": "MIT",
   "repository": {
@@ -21,7 +21,8 @@
     "html-entities": "^1.2.0",
     "htmlparser2": "^3.9.0",
     "stream": "0.0.2",
-    "@nois/react-native-webview-autoheight": "^1.0.6"
+    "@nois/react-native-webview-autoheight": "^1.0.6",
+    "react-native-image-zoom-viewer": "^2.2.5"
   },
   "peerDependencies": {
     "prop-types": ">=15.5.10",
