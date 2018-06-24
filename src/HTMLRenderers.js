@@ -147,7 +147,7 @@ export function iframe (htmlAttribs, children, convertedCSSStyles, passProps) {
     }
 
     return (
-        <WebViewAutoHeight key={passProps.key} source={source} style={style} />
+        <WebViewAutoHeight key={passProps.key} source={source} style={style} defaultHeight={200} />
     );
 }
 
