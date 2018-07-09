@@ -1,11 +1,11 @@
 {
   "name": "@nois/react-native-render-html",
-  "version": "3.12.3",
+  "version": "3.12.4",
   "author": "Archriss",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/archriss/react-native-render-html.git"
+    "url": "git+https://github.com/@nois/react-native-render-html.git"
   },
   "description": "React Native component that renders HTML as native views",
   "keywords": [
@@ -42,9 +42,9 @@
     "eslint-plugin-standard": "3.0.1"
   },
   "bugs": {
-    "url": "https://github.com/archriss/react-native-render-html/issues"
+    "url": "https://github.com/@nois/react-native-render-html/issues"
   },
-  "homepage": "https://github.com/archriss/react-native-render-html#readme",
+  "homepage": "https://github.com/@nois/react-native-render-html#readme",
   "main": "index.js",
   "scripts": {
     "test": "test"
