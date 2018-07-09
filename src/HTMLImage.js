@@ -131,6 +131,9 @@ export default class HTMLImage extends PureComponent {
               fontSize: 35,
               fontWeight: 'bold',
               color: '#fff',
+              textShadowColor: 'rgba(0, 0, 0, 0.75)',
+              textShadowOffset: {width: -1, height: 1},
+              textShadowRadius: 3
             }}>×</Text>
           </TouchableOpacity>
         </View>
