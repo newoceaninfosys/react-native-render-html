@@ -15,7 +15,7 @@ export function a (htmlAttribs, children, convertedCSSStyles, passProps) {
     // the passed props might be altered by it !!
     const { parentWrapper, onLinkPress, key, data } = passProps;
     const onPress = (evt) => onLinkPress && htmlAttribs ?
-        onLinkPress(evt, htmlAttribs.href, htmlAttribs) :
+        onLinkPress(evt, htmlAttribs, {data, children}) :
         undefined;
 
     if (parentWrapper === 'Text') {
