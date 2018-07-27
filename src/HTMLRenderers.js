@@ -14,7 +14,7 @@ export function a (htmlAttribs, children, convertedCSSStyles, passProps) {
     // !! This deconstruction needs to happen after the styles construction since
     // the passed props might be altered by it !!
     const { parentWrapper, onLinkPress, key, data } = passProps;
-    const onPress = (evt) => onLinkPress && htmlAttribs && htmlAttribs.href ?
+    const onPress = (evt) => onLinkPress && htmlAttribs ?
         onLinkPress(evt, htmlAttribs.href, htmlAttribs) :
         undefined;
 
