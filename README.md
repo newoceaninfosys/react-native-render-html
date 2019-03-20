@@ -37,7 +37,8 @@ An iOS/Android pure javascript react-native component that renders your HTML int
 
 ## Install
 
-`npm install react-native-render-html --save` or `yarn add react-native-render-html`
+1. `npm install react-native-render-html react-native-android-fullscreen-webview-video --save` or `yarn add react-native-render-html react-native-android-fullscreen-webview-video`
+2. `react-native link react-native-android-fullscreen-webview-video` # android full screen support
 
 ## Basic usage
 
