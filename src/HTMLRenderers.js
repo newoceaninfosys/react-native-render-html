@@ -1,6 +1,7 @@
 import React from 'react';
-import { TouchableOpacity, Text, View, WebView, Dimensions } from 'react-native';
+import { TouchableOpacity, Text, View, WebView, Dimensions, Platform } from 'react-native';
 import WebViewAutoHeight from '@nois/react-native-webview-autoheight';
+import WebViewFullScreen from 'react-native-android-fullscreen-webview-video';
 import { _constructStyles, _getElementClassStyles } from './HTMLStyles';
 import HTMLImage from './HTMLImage';
 
@@ -145,9 +146,15 @@ export function iframe (htmlAttribs, children, convertedCSSStyles, passProps) {
     if(htmlAttribs.srcdoc) {
       source = { html: htmlAttribs.srcdoc };
     }
+    
+    if(Platform.OS === 'ios') {
+        return (
+          <WebViewAutoHeight key={passProps.key} source={source} style={style} defaultHeight={200} />
+        );
+    }
 
     return (
-        <WebViewAutoHeight key={passProps.key} source={source} style={style} defaultHeight={200} />
+        <WebViewFullScreen key={passProps.key} source={source} style={style} defaultHeight={200} />
     );
 }
 
